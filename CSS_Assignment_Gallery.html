@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Assignment Gallery </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            background-color: black;
+        }
+        .main .left{
+            width: 80%;
+            background-color: aliceblue;
+
+        }
+        .gallery .bx1{
+            height: 250px;
+            display: grid;
+            grid-template-columns: 70% auto;
+            gap: 10px;
+        }
+        .gallery .box{
+           margin-top: 10px;
+        }
+        .gallery .bx1 .itm1{
+            /* background-color: aqua; */
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/free-photo/maldives-island_74190-478.jpg?w=1060&t=st=1691217869~exp=1691218469~hmac=a4f3bfd0673ba75e36304d9ee59d6cc6643fb2ce5075c5580c9889d7e9e8e2d3);
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            transition: all 2s linear;
+        }
+        .gallery .hv:hover{
+            /* background-position: center center; */
+            background-position: center center !important;
+            outline: 5px solid white;
+            outline-offset: -20px;
+        }
+        .gallery .bx1 .itm2{
+            /* background-color: blue; */
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/premium-photo/wooden-round-podium-grass-realistic-3d-illustration-forest-background-scenery-3d-render-empty-product-pedestal-natural-environment-green-trees-around-soft-day-light_204216-628.jpg?w=740);
+            /* background-size: 100% 500%; */
+            background-repeat: no-repeat;
+            transition: all 2s linear;
+        }
+
+        .gallery .bx2{
+            height: 250px;
+            display: grid;
+            grid-template-columns: 20% 60% auto;
+            gap: 10px;
+        }
+        .gallery .bx2 .itm3{
+            /* background-color: lightgreen; */
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/premium-photo/beautiful-rays-sunlight-green-forest_733139-3824.jpg?w=1380);
+            /* background-size: 100% 500%; */
+            background-repeat: no-repeat;
+            transition: all 2s linear;
+        }
+        .gallery .bx2 .itm4{
+            /* background-color: lightsalmon; */
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/free-photo/coast-rural-majestic-vacation-wet-boat_1417-1278.jpg?w=1060&t=st=1691259566~exp=1691260166~hmac=92454b62a62db9550b4078f7d96e6d1501d284862f80d00fa50eb8fcbe002aa7);
+            /* background-size: 100% 500%; */
+            background-repeat: no-repeat;
+            transition: all 2s linear;
+        }
+        .gallery .bx2 .itm5{
+            /* background-color: lightskyblue; */
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/premium-vector/garden-with-beautiful-rainbow_33070-4120.jpg?w=900);
+            /* background-size: 100% 500%; */
+            background-repeat: no-repeat;
+            transition: all 2s linear;
+        }
+        .gallery .bx3{
+            height: 250px;
+            display: grid;
+            grid-template-columns: 50% auto;
+            gap: 10px;
+
+        }
+        .gallery .bx3 .itm6{
+            /* background-color:brown; */
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/free-vector/blank-landscape-scene-nature-park-sunset-time_1308-61312.jpg?w=1380&t=st=1691260124~exp=1691260724~hmac=638a7dfae6da3286fa52e500e576341437eaa250228bafec3ef5e0722144b833);
+            /* background-size: 100% 500%; */
+            background-repeat: no-repeat;
+            transition: all 2s linear;
+        }
+        .gallery .bx3 .itm7{
+            /* background-color: purple; */
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/free-photo/breathtaking-view-trees-foggy-hills-captured-sunset-hawke-s-bay-new-zealand_181624-40546.jpg?w=1060&t=st=1691259897~exp=1691260497~hmac=6a512323dc90fed8bde01727076139861edd61d78d06c281fed24bff25ead1d2);
+            /* background-size: 100% 500%; */
+            background-repeat: no-repeat;
+            transition: all 2s linear;
+        }
+
+        .gallery .bx4{
+            height: 250px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+
+        }
+        .gallery .bx4 .itm8{
+            /* background-color: lightgreen; */
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/premium-photo/mt-fuji-sea-wave-sunset-3d-illustration_890887-11840.jpg?w=740);
+            /* background-size: 100% 500%; */
+            background-repeat: no-repeat;
+            transition: all 2s linear;
+        }
+        .gallery .bx4 .itm9{
+            /* background-color: lightsalmon; */
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/free-photo/silhouette-freespirited-hiker-top-mountain-golden-sunset_181624-60215.jpg?w=740&t=st=1691260284~exp=1691260884~hmac=4aa252d3d3920aedab458ebc49ffdaa3ed58c13578c08c0d416e29573c4475a8);
+            /* background-size: 100% 500%; */
+            background-repeat: no-repeat;
+            transition: all 2s linear;
+        }
+        .gallery .bx4 .itm10{
+            /* background-color: lightskyblue; */
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://img.freepik.com/premium-photo/sunset-through-bridge-door_13920-1232.jpg?w=826);
+            /* background-size: 100% 500%; */
+            background-repeat: no-repeat;
+            transition: all 2s linear;
+        }
+        .main aside{
+            text-align: right;
+            width: 20%;
+            padding: 20px 20px 0 0;
+            height: 600px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .main aside nav{
+            margin: 20px 0;
+        }
+        .main aside nav a{
+            color: white;
+            display: block;
+            text-decoration: none;
+            margin-bottom: 15px;  
+            font-size: 12px;
+        }
+        .main aside h2{
+            font-size: 20px;
+        }
+        .main aside nav a:hover{
+            color: red;
+        }
+        /* .main aside .icons{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            flex-direction: row-reverse;
+            background-color: aqua;
+           
+       } */
+        /* .main aside .icons .icon{
+            color: white;
+            font-size: 15px;
+            align-self: end;
+        } */
+      
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="gallery">
+             <div class=" bx1">
+                <div class="itm1 hv"></div>
+                <div class="itm2 hv"></div>
+             </div>
+             <div class="box bx2">
+                <div class="itm3 hv"></div>
+                <div class="itm4 hv"></div>
+                <div class="itm5 hv"></div>
+             </div>
+             <div class="box bx3">
+                <div class="itm6 hv"></div>
+                <div class="itm7 hv"></div>
+             </div>
+             <div class="box bx4">
+                <div class="itm8 hv"></div>
+                <div class="itm9 hv"></div>
+                <div class="itm10 hv"></div>
+             </div>
+            </div>
+        </div>
+        <aside>
+          <h2> Shutter </h2>
+          <nav> 
+            <a href=""> Home </a>
+            <a href=""> Photos </a>
+
+            <a href=""> Bio </a>
+            <a href=""> Blog </a>
+            <a href=""> Contact </a>
+
+          </nav>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f icon"></i> 
+          <i class="fa-brands fa-twitter icon"></i> 
+          <i class="fa-brands fa-instagram icon"></i>
+        </div>
+        </aside>
+
+    </div>
+</body>
+</html>

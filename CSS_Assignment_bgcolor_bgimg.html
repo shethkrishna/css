@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS assignment using bgcolor and bg image </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:wght@100&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .main .left{
+            width: 50%;
+            text-align: right;
+            background-color:rgb(36, 35, 35);
+            padding: 20px;
+            color: white;
+            position: relative;
+        }
+        .main .left .bar{
+            color: white;
+            text-align: left;
+        }
+        .main .left .bar:hover{
+            color: red;
+        }
+        .main .left .bar1{
+           position: absolute;
+           top: 43%;
+        }
+        .main .left .bar2{
+            position: absolute;
+        top: 50%;
+        }
+        .main .left .bar3{
+           position: absolute;
+           top: 57%;
+        }
+        .main .left h1{
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin-bottom: 30px;;
+            font-weight: 900;
+            border-right: 1px solid red;
+           padding-right: 10px;;
+        }
+        .main .left h3{
+            color: red;
+            font-size: 12px;
+            /* font-weight: 500; */
+        }
+        .main .left P{
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+        .main .right{
+            width: 50%;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaI77WxKj2t_N7mpilBoHH_GNSbstMhFEAhg&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main .bt{
+            width: 30px;
+            height: 30px;
+            background-color:  white;
+            border: 2px solid lightgrey;
+            border-radius: 100%;
+            /* align-self: center; */
+        }
+        .main .btn1{
+            position: absolute;
+            left: 49%;
+            top: 26%;
+           padding: 4px;
+        }
+        .main .btn2{
+            position: absolute;
+            left: 49%;
+           top: 47%;
+           padding: 4px;
+        }
+        .main .btn3{
+            position: absolute;
+            left: 49%;
+           top: 68%;
+         padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="bar bar1"> | </div>
+            <div class="bar bar2"> | </div>
+            <div class="bar bar3"> | </div>
+            <h1> OUR SERVICES </h1>
+            <h3> WEB DESIGN </h3>
+            <P> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quae doloremque non aperiam tenetur, commodi dignissimos.</P>
+            
+            <h3> PRINT DESIGN </h3>
+            <P> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quae doloremque non aperiam tenetur, commodi dignissimos.</P>
+
+            <h3> PHOTOGRAPHY </h3>
+            <P> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quae doloremque non aperiam tenetur, commodi dignissimos.</P>
+        </div>
+
+        <div class="btn1 bt">
+            <i class="fa fa-computer"></i>
+        </div>
+        <div class="btn2 bt">
+            <i class="fa fa-print"></i>
+        </div>
+        <div class="btn3 bt">
+            <i class="fa fa-camera"></i>
+        </div>
+
+        <div class="right"></div>
+        
+    </div>
+</body>
+</html>
